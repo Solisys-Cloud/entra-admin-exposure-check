@@ -1,0 +1,25 @@
+=== Tenant notification contacts ===
+Technical notification emails : it-admin@contoso.com
+Security notification emails  :
+
+=== Privileged administrators ===
+
+Admin                                          PhishingResistant Roles                                              Methods
+-----                                          ----------------- -----                                              -------
+3f1c9a2e-5b7d-4c11-9e2a-7d4b8c6e1f20           n/a               Exchange Administrator [Active]
+admin@contoso.com                              NO                Global Administrator [Active]                      password, phone, microsoftAuthenticator
+adele.vance@contoso.com                        NO                Helpdesk Administrator [Active]                    password
+alex.wilber@contoso.com                        NO                Global Administrator [Active]; SharePoint Ad...    password, microsoftAuthenticator
+partner.one_fabrikam.com#EXT#@contoso.onmic... NO                Global Administrator [Active]                      password, microsoftAuthenticator
+megan.bowen@contoso.com                        Yes               Global Administrator [Eligible]                    password, fido2, windowsHelloForBusiness
+nestor.wilke@contoso.com                       Yes               Security Administrator [Eligible]                  password, fido2
+it.contractor_outlook.com#EXT#@contoso.onmi... Unknown           User Administrator [Active]                        (guest account: its methods are managed in its home tenant)
+
+=== Conditional Access ===
+No enabled policy requires the Phishing-resistant MFA strength for directory roles.
+
+=== Summary ===
+Privileged principals checked              : 8
+Admins without a phishing-resistant method : 4
+Guest accounts holding privileged roles    : 2
+Admins whose methods could not be read     : 1

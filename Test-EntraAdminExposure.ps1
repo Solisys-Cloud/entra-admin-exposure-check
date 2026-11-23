@@ -15,6 +15,9 @@
     already knows your admin email addresses would hit the weakest point.
 
 .NOTES
+    Written by Olivier Lumeau
+    https://github.com/Solisys-Cloud/entra-admin-exposure-check
+
     Requires the Microsoft Graph PowerShell SDK:  Install-Module Microsoft.Graph -Scope CurrentUser
     Run it as a Global Reader (least privileged role that can read other users' authentication methods).
     All permissions requested are read-only.
